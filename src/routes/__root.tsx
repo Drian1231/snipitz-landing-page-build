@@ -77,21 +77,42 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Snipitz — Commercial Intelligence for Sports Rights Holders" },
+      {
+        name: "description",
+        content:
+          "Snipitz turns your anonymous digital audience into verified, sponsor-ready intelligence — so your commercial team can close bigger partnerships, faster.",
+      },
+      { name: "author", content: "Snipitz" },
+      {
+        property: "og:title",
+        content: "Snipitz — Commercial Intelligence for Sports Rights Holders",
+      },
+      {
+        property: "og:description",
+        content:
+          "Prove the value of the fans you don't know yet. Verified identity resolution, monthly commercial intelligence, and direct commercial support.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Snipitz" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap",
+      },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
     ],
   }),
   shellComponent: RootShell,
